@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include "navbar.html" %}
+
+<a href="{{url_for('delete', id=c.id) }}" class= "btn btn-dark">delete</a>
+
+<a href="{{url_for('index', id=c.id) }}" class= "btn btn-dark">go back</a>
+
+
+<h2>{{c.id}}:{{c.name}}</h2>
+<hr>
+
+{% endblock %}
+
+{% block bg_color %}light{% endblock bg_color %}
+
+{% block title %}show bag{% endblock title %} 

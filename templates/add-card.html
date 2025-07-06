@@ -1,0 +1,57 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+{% include "navbar.html" %}
+
+
+
+<div class="row">
+  <div class="col-md-4 mb-3 mb-sm-0">
+    <div class="card"style="width:400px">
+      <img src="https://us.christianlouboutin.com/media/catalog/product/cache/c8e9b72c512eaa31cd76a11d9f425a9e/3/1/3130694bk01-3130694bk01-main_image-ecommerce-christianlouboutin-sokate-3130694_bk01_1_1200x1200.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Louboutin</h5>
+        <p class="card-text">price : $845.00</p>
+        <form action="/add-card" method="POST">
+          <input type="hidden" name="name" value="Louboutin">
+          <button type="submit" class="btn btn-dark btn-lg">add to bag</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card"style="width:300px">
+      <img src="https://selectedbym.s3.eu-central-1.amazonaws.com/media/products/productimage/C3F7F6LBKFGDHLQICKSSZY3LCI.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Saint Laurent</h5>
+        <p class="card-text">price : $1,350.00</p>
+        <form action="/add-card" method="POST">
+          <input type="hidden" name="name" value="Saint Laurent">
+          <button type="submit" class="btn btn-dark btn-lg">add to bag</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card"style="width:400px">
+      <img src="https://ehrxi2etm6y.exactdn.com/wp-content/uploads/2017/11/mame-fashion-dictionary-cesare-paciotti-iconic-high-heels-with-logo-768x768.jpg?strip=all&lossy=1&quality=75&avif=75&sharp=1&ssl=1" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cesare Paciotti</h5>
+        <p class="card-text">price : $1,200.00</p>
+        <form action="/add-card" method="POST">
+          <input type="hidden" name="name" value="Cesare Paciotti">
+          <button type="submit" class="btn btn-dark btn-lg">add to bag</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <a href="/index" class="btn btn-dark">edit my bag</a>
+</div>
+{% endblock %}
+
+{% block bg_color %}light{% endblock bg_color %}
+
+{% block title %}Shop{% endblock title %} 

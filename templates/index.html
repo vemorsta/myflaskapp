@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include "navbar.html" %}
+
+{% for card in cards %}
+<a href="{{ url_for('details', id=card.id)}}"><h2>{{card.id}}</h2></a>
+<hr>
+{% endfor %}
+{% endblock %}
+
+{% block bg_color %}light{% endblock bg_color %}
+
+{% block title %}index{% endblock title %} 
