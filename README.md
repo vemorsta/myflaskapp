@@ -29,14 +29,14 @@ a fashion magazine platform that also features a basic `online store`.
 
 \## 🚀 Getting Started
 
-\### 1. Clone the repository:
+**1. Clone the repository:**
 
-\`\`\`bash
+```bash
 
 git clone https://github.com/your-username/your-repo-name.git
 
 cd your-repo-name
-
+```
 **2. Create virtual environment (optional but recommended):**
 
 ```bash
